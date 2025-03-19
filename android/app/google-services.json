@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "72860799529",
+    "project_id": "patrol-demo-test",
+    "storage_bucket": "patrol-demo-test.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72860799529:android:28cb118051c0eaf7f48238",
+        "android_client_info": {
+          "package_name": "com.example.patrol_test_demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKp-OTO3LGcOqa5VG4qjTYYVIOOqoU5lE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

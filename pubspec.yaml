@@ -1,0 +1,33 @@
+name: patrol_test_demo
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.12.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  patrol: ^3.14.1
+
+flutter:
+  uses-material-design: true
+
+patrol:
+  app_name: patrol_test_demo
+  android:
+    package_name: com.example.patrol_test_demo
+  ios:
+    bundle_id: com.example.patrol_test_demo
+  macos:
+    bundle_id: com.example.patrolTestDemo
