@@ -7,13 +7,13 @@ What is in the project?
 
 |                |Feature|Status|
 |----------------|-------------------------------|-----------------------------|
-|1|Flutter basic UI (asking for permissions buttons and a flag that Wifi is not connected)|⏳|
+|1|Flutter basic UI (asking for permissions buttons and a flag that Wifi is not connected)|✅|
 |2|Patrol Android setup|✅|
 |3|Patrol IOS setup*|❌ |
 |4|Connect to Firebase|✅|
 |5|Setup publishing to Firebase test lab|✅|
 |6|Patrol simple example (copied from docs)|✅|
-|7|Patrol toggle Wifi|⏳|
+|7|Patrol toggle Wifi|✅|
 |8|Patrol asking for permissions|⏳|
 
 *can be added later
