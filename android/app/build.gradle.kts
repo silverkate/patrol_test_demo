@@ -31,10 +31,6 @@ android {
         testInstrumentationRunnerArguments["clearPackageData"] = "true"
     }
 
-    testOptions {
-        execution = "ANDROIDX_TEST_ORCHESTRATOR"
-    }
-
     buildTypes {
         release {
             signingConfig = signingConfigs.getByName("debug")
@@ -54,6 +50,5 @@ flutter {
 }
 
 dependencies {
-    androidTestImplementation("androidx.test:orchestrator:1.4.2")
     androidTestUtil("androidx.test:orchestrator:1.4.2")
 }
