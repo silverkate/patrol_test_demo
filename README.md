@@ -1,16 +1,53 @@
-# patrol_test_demo
+# Patrol integration test demo
+The project is made to try the patrol package capabilities.
 
-A new Flutter project.
+## Info
 
-## Getting Started
+What is in the project?
 
-This project is a starting point for a Flutter application.
+|                |Feature|Status|
+|----------------|-------------------------------|-----------------------------|
+|1|Flutter basic UI (asking for permissions buttons and a flag that Wifi is not connected)|⏳|
+|2|Patrol Android setup|✅|
+|3|Patrol IOS setup*|❌ |
+|4|Connect to Firebase|✅|
+|5|Setup publishing to Firebase test lab|✅|
+|6|Patrol simple example (copied from docs)|✅|
+|7|Patrol toggle Wifi|⏳|
+|8|Patrol asking for permissions|⏳|
 
-A few resources to get you started if this is your first Flutter project:
+*can be added later
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Use the [patrol documentation](https://patrol.leancode.co/documentation) to install the patrol cli.
+2. (optional) If you want to connect to Firebase Test Lab, read [docs here](https://patrol.leancode.co/documentation/ci/firebase-test-lab).
+
+
+## Usage
+
+Run the command to run the test:
+```bash
+patrol test -t integration_test/example_test.dart 
+```
+
+Run the command to publish test to Firebase Test Labs
+```bash
+patrol build android --target integration_test/example_test.dart
+
+gcloud firebase test android run \
+    --type instrumentation \
+    --use-orchestrator \
+    --app build/app/outputs/apk/debug/app-debug.apk \
+    --test build/app/outputs/apk/androidTest/debug/app-debug-androidTest.apk \
+    --timeout 1m \
+    --device model=MediumPhone.arm,version=34,locale=en,orientation=portrait \
+    --record-video \
+    --environment-variables clearPackageData=true
+```
+
+
+## Contribution / Access
+
+Feel free to use the code anyhow you wish, contact me if you want an access to Firebase console (another option is to create your own project and connect it there)
+
