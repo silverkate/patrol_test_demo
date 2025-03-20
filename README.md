@@ -46,7 +46,9 @@ gcloud firebase test android run \
     --environment-variables clearPackageData=true
 ```
 
-[possible android issue](https://github.com/leancodepl/patrol/issues/2005)
+
+TODO: batch patrol test fails in Android studio because of flags absence.
+[need to google fix](https://github.com/leancodepl/patrol/issues/2005)
 
 ## Contribution / Access
 
