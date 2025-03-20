@@ -14,7 +14,7 @@ What is in the project?
 |5|Setup publishing to Firebase test lab|✅|
 |6|Patrol simple example (copied from docs)|✅|
 |7|Patrol toggle Wifi|✅|
-|8|Patrol asking for permissions|⏳|
+|8|Patrol asking for permissions|✅|
 
 *can be added later
 
@@ -26,14 +26,9 @@ What is in the project?
 
 ## Usage
 
-Run the command to run a single test:
+Run the command to run patrol test:
 ```bash
 patrol test -t integration_test/example_test.dart 
-```
-
-Run the command to run all tests:
-```bash
-patrol test
 ```
 
 Run the command to publish test to Firebase Test Labs
@@ -51,6 +46,9 @@ gcloud firebase test android run \
     --environment-variables clearPackageData=true
 ```
 
+
+TODO: batch patrol test fails in Android studio because of flags absence.
+[need to google fix](https://github.com/leancodepl/patrol/issues/2005)
 
 ## Contribution / Access
 

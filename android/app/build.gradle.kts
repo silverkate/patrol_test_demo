@@ -10,7 +10,7 @@ plugins {
 android {
     namespace = "com.example.patrol_test_demo"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -50,5 +50,5 @@ flutter {
 }
 
 dependencies {
-    androidTestUtil("androidx.test:orchestrator:1.5.1")
+    androidTestUtil("androidx.test:orchestrator:1.4.2")
 }
