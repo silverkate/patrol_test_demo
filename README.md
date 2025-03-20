@@ -26,9 +26,14 @@ What is in the project?
 
 ## Usage
 
-Run the command to run the test:
+Run the command to run a single test:
 ```bash
 patrol test -t integration_test/example_test.dart 
+```
+
+Run the command to run all tests:
+```bash
+patrol test
 ```
 
 Run the command to publish test to Firebase Test Labs
